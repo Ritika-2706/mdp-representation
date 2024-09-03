@@ -1,37 +1,54 @@
 # MDP REPRESENTATION
 
 ## AIM:
-Write your aim here
+To represent any one real-world problem in Markov Decision Problem(MDP) form.
 
 ## PROBLEM STATEMENT:
 
 ### Problem Description
-Write your answer here
+The agent's role is to manage the traffic signal controls by adjusting the signal colors based on traffic conditions.
 
 ### State Space
-Write your answer here
+{0,1,2} = {Red,Yellow,Green}
 
 ### Sample State
-Write your answer here
+{0} = {Red}
 
 ### Action Space
-Write your answer here
+{0,2} = {Stop the vehicle on red signal hits, ready to go} 
 
 ### Sample Action
-Write your answer here
+{0} = {Stop the vehicle on red signal}
 
 ### Reward Function
-Write your answer here
+R = {If +1,ready to go when signal returns green, otherwise 0}
 
 ### Graphical Representation
-Write your answer here
+![gp](https://github.com/user-attachments/assets/460bb76e-7a44-46d1-9912-4ec994f59506)
+
 
 ## PYTHON REPRESENTATION:
-Write your code here
+```
+Developed by: Ritika S
+Reg no: 212221240046
+```
+```
+P={0: {0: [(1.0, 0, 0.0, True)],
+       1: [(1.0, 0, 0.0, True)]},
+
+   1: {0: [(1.0, 0, 0.0, True)],
+       1: [(1.0, 2, 1.0, True)]},
+
+   2: {0: [(1.0, 2, 0.0, True)],
+       1: [(1.0, 2, 0.0, True)]}
+  }
+```
 
 ## OUTPUT:
-Write your Python output here
+![Screenshot 2024-09-03 204827](https://github.com/user-attachments/assets/f923a5f4-d780-4ddf-83e6-8e0839b90574)
+
 
 ## RESULT:
+Thus, a real-world problem is represented in MDP form.
 Write your output here
 
